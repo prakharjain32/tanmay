@@ -219,7 +219,21 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
 </span>
         </span>
         <!--end footer-->
-<button type="button">click me for custom mbox</button>
+	<script>
+		adobe.target.getOffer({   
+  "mbox": "prakhar-homepage", 
+  "success": function(offer) {           
+        adobe.target.applyOffer( {  
+           "mbox": "prakhar-homepage", 
+           "offer": offer  
+        } ); 
+  },   
+  "error": function(status, error) {           
+      console.log('Error', status, error); 
+  } 
+});
+		</script>
+<button type="button" onclick='targetmbox()'>click me for custom mbox</button>
     </div>
 
     <!--Place DTM footer below this-->
