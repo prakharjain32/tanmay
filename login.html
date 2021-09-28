@@ -13,8 +13,8 @@
 
 function login() {
 document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You're logged in!";
-	trg=''
-	trg.loginstatus='loggedin'
+	window.trg=''
+	window.trg.loginstatus='loggedin'
 	_satellite.track('trglogin')
 }
 </script>
@@ -22,8 +22,8 @@ document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You'r
 <script>
 function logout() {
 document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged out.";
-	trg=''
-	trg.loginstatus='loggedout'
+	window.trg=''
+	window.trg.loginstatus='loggedout'
 	_satellite.track('trglogin')
 }</script>
     <!--Place DTM header above this-->
